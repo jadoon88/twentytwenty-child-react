@@ -14,4 +14,4 @@ change these URLs to the URLs of your WP installation.
 4. Activate the child theme 
 
 ## License
-MIT](https://choosealicense.com/licenses/mit/)
+[MIT](https://choosealicense.com/licenses/mit/)
