@@ -103,6 +103,8 @@ const Posts = () => {
   const [posts, setPosts] = useState([]);
   const [page, setPage] = useState(1);
   const [totalPosts, setTotalPosts] = useState(0);
+  const [showNextPageButton, setShowNextPageButton] = useState(false);
+  const [showPreviousPageButton, setPreviousPageButton] = useState(false);
 
   function getTotalPages() {
     return totalPosts / perPage;
@@ -113,7 +115,7 @@ const Posts = () => {
   }
 
   function previousPage() {
-    setPage(page + 1);
+    setPage(page - 1);
   }
 
   function getPosts() {
