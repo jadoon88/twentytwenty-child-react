@@ -28,8 +28,8 @@ const Posts = () => {
     function nextPage() {
         setPageForPagination(page + 1);
     }
-    function setPageForPagination(page)
-    {
+
+    function setPageForPagination(page) {
         setArePostsLoaded(false);
         setPage(page);
     }
@@ -103,7 +103,7 @@ const Posts = () => {
             <Row className={
                 arePostsLoaded ? 'loader hidden' : 'loader'
             }>
-                <Spinner animation="border" />
+                <Spinner animation="border"/>
 
             </Row>
             <Row className={
@@ -130,23 +130,23 @@ const Posts = () => {
                     {
                         posts.map(
                             (post, index) => (
-                                <Col lg={3} md={3}  key={index}>
+                                <Col lg={3} md={3} key={index}>
 
                                     <Row>
                                         <Image
                                             src=
                                                 {
-                                            post.featured_image_url ?
-                                                post.featured_image_url : 'https://via.placeholder.com/600x400?text=No+image'
-                                        }
+                                                    post.featured_image_url ?
+                                                        post.featured_image_url : 'https://via.placeholder.com/600x400?text=No+image'
+                                                }
                                         ></Image>
                                     </Row>
 
                                     <Row>
-                                        <a  href={post.link}>
-                                        <h4>
-                                            {post.title.rendered}
-                                        </h4>
+                                        <a href={post.link}>
+                                            <h4>
+                                                {post.title.rendered}
+                                            </h4>
                                         </a>
                                     </Row>
                                     <Row>
@@ -170,16 +170,11 @@ const Posts = () => {
                             Next Page
                         </Button>
                     </Col>
-
-
                 </Row>
-
             </Row>
             <Row>
             </Row>
         </Container>
-
-
     );
 };
 render(<Posts/>, document.getElementById("react-app"));
