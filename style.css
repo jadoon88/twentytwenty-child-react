@@ -9,3 +9,23 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Text Domain:  twentytwentychild
 */
+
+button:disabled,
+button[disabled]{
+    background-color: #c5b6b9;
+}
+
+.hidden
+{
+    display: none !important;
+}
+select#category-filter {
+    width: 100px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.align-right
+{
+    text-align:right;
+}
